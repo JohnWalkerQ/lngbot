@@ -1,7 +1,7 @@
 (function () {
 
     // Change this to your GitHub username so you don't have to modify so many things.
-    var fork = "basicBot";
+    var fork = "JohnWalkerQ";
 
     // Define our function responsible for extending the bot.
     function extend() {
@@ -46,7 +46,7 @@
     //Change the bots default settings and make sure they are loaded on launch
 
     localStorage.setItem("basicBotsettings", JSON.stringify({
-      botName: "basicBot",
+      botName: "LNG Bot",
       language: "english",
       chatLink: "https://rawgit.com/basicBot/source/master/lang/en.json",
       scriptLink: "https://rawgit.com/basicBot/source/master/basicBot.js",
@@ -55,11 +55,11 @@
       startupVolume: 0, // 0-100
       startupEmoji: false, // true or false
       autowoot: true,
-      autoskip: false,
+      autoskip: true,
       smartSkip: true,
       cmdDeletion: true,
       maximumAfk: 120,
-      afkRemoval: true,
+      afkRemoval: false,
       maximumDc: 60,
       bouncerPlus: true,
       blacklistEnabled: true,
@@ -68,13 +68,13 @@
       maximumLocktime: 10,
       cycleGuard: true,
       maximumCycletime: 10,
-      voteSkip: false,
-      voteSkipLimit: 10,
-      historySkip: false,
+      voteSkip: true,
+      voteSkipLimit: 5,
+      historySkip: true,
       timeGuard: true,
       maximumSongLength: 10,
       autodisable: true,
-      commandCooldown: 30,
+      commandCooldown: 60,
       usercommandsEnabled: true,
       skipPosition: 3,
       skipReasons: [
